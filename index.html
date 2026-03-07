@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Issues Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+<div id="login-page">
+  <div class="login-card">
+    <img class="login-logo" src="assets/github-logo.png" alt="GitHub Logo" />
+    <div class="login-titles">
+      <p class="login-title">GitHub Issues Tracker</p>
+      <p class="login-subtitle">Sign in to manage your issues</p>
+    </div>
+    <div class="login-fields">
+      <div class="field-group">
+        <label class="field-label">Username</label>
+        <input class="field-input" id="username-input" type="text" placeholder="Enter Username" />
+        <span class="field-hint">Default: admin</span>
+      </div>
+      <div class="field-group">
+        <label class="field-label">Password</label>
+        <input class="field-input" id="password-input" type="password" placeholder="Enter Password" />
+        <span class="field-hint">Default: admin123</span>
+      </div>
+      <div class="error-msg" id="login-error">Invalid credentials. Please try admin / admin123.</div>
+    </div>
+    <button class="login-btn" id="login-btn">Sign In</button>
+    <div class="or-row">
+      <div class="or-line"></div>
+      <span class="or-text">OR</span>
+      <div class="or-line"></div>
+    </div>
+    <div class="demo-box">
+      <p class="demo-label">Demo Credentials:</p>
+      <p class="demo-text"><strong>Username:</strong> admin<br><strong>Password:</strong> admin123</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
