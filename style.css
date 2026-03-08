@@ -31,7 +31,7 @@ body {
   min-height: 100vh;
 }
 
-
+/* LOGIN PAGE */
 #login-page {
   display: flex;
   align-items: center;
@@ -121,9 +121,10 @@ body {
 .demo-text { font-size: 15px; color: var(--dark); line-height: 1.8; }
 .demo-text strong { font-weight: 600; }
 
-
+/* MAIN PAGE */
 #main-page { min-height: 100vh; background: var(--bg); }
 
+/* NAVBAR */
 .navbar {
   background: var(--white);
   border-bottom: 1px solid var(--nav-border);
@@ -167,9 +168,10 @@ body {
 }
 .search-input::placeholder { color: var(--muted); }
 
+/* CONTENT */
 .main-content { padding: 60px 80px; max-width: 1600px; margin: 0 auto; }
 
-
+/* FILTER TABS */
 .filter-bar {
   background: var(--white);
   border: 1px solid var(--border);
@@ -200,7 +202,7 @@ body {
   border-color: var(--primary);
 }
 
-
+/* ISSUES PANEL */
 .issues-panel {
   background: var(--white);
   border: 1px solid var(--border);
@@ -243,7 +245,7 @@ body {
 .status-item { display: flex; align-items: center; gap: 6px; font-size: 15px; color: var(--dark); }
 .status-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
 
-
+/* CARDS */
 .cards-body { padding: 24px; }
 
 .cards-grid {
@@ -263,9 +265,9 @@ body {
   transition: transform 0.15s, box-shadow 0.15s;
   border-top: 3px solid transparent;
 }
-.issue-card.open   { border-top-color: var(--green); }
+.issue-card.open  { border-top-color: var(--green); }
 .issue-card.closed { border-top-color: var(--purple); }
-.issue-card:hover  { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+.issue-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
 
 .card-top {
   background: var(--white);
@@ -322,6 +324,7 @@ body {
 .card-bottom { background: var(--white); border-top: 1px solid var(--border); padding: 12px 16px; }
 .card-mini { font-size: 12px; color: var(--muted); line-height: 1.7; }
 
+/* LOADING */
 .empty-state { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }
 
 .spinner-wrapper { padding: 60px; display: flex; align-items: center; justify-content: center; }
@@ -335,7 +338,7 @@ body {
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-
+/* MODAL */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -426,7 +429,7 @@ body {
 }
 .close-btn:hover { opacity: 0.9; }
 
-
+/* RESPONSIVE */
 @media (max-width: 1280px) {
   .navbar       { padding: 16px 40px; }
   .main-content { padding: 40px; }
