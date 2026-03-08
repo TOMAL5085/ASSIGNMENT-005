@@ -1,17 +1,15 @@
-// ASSETS //
-const OPEN_STATUS_IMG   = 'assets/open-status.png';
-const CLOSED_STATUS_IMG = 'assets/Closed- Status .png';
 
-// API //
+const OPEN_STATUS_IMG   = 'assets/open-status.png';
+const CLOSED_STATUS_IMG = 'assets/closed- status .png';
+
+
 const API_BASE = 'https://phi-lab-server.vercel.app/api/v1/lab';
 
-// STATE //
 let allIssues      = [];
 let currentFilter  = 'all';
 let searchQuery    = '';
 let searchDebounce = null;
 
-// INIT //
 document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('login-btn').addEventListener('click', handleLogin);
@@ -53,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 });
 
-// LOGIN //
 function handleLogin() {
   const username = document.getElementById('username-input').value.trim();
   const password = document.getElementById('password-input').value.trim();
@@ -69,7 +66,6 @@ function handleLogin() {
   }
 }
 
-// API CALLS //
 async function loadIssues() {
   showLoading();
   try {
@@ -110,7 +106,6 @@ async function searchIssues(q) {
   }
 }
 
-// RENDER //
 function showLoading() {
   document.getElementById('cards-container').innerHTML =
     '<div class="spinner-wrapper"><div class="spinner"></div></div>';
@@ -192,7 +187,6 @@ function getLabelClass(label) {
   return map[l] || 'label-default';
 }
 
-// MODAL //
 async function openModal(id) {
   const overlay = document.getElementById('issue-modal');
   overlay.classList.add('open');
