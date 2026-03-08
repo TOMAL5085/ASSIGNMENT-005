@@ -1,6 +1,6 @@
 
-const OPEN_STATUS_IMG   = 'assets/open-status.png';
-const CLOSED_STATUS_IMG = 'assets/closed- status .png';
+const OPEN_STATUS_IMG   = 'assets/Open-Status.png';
+const CLOSED_STATUS_IMG = 'assets/Closed-Status.png';
 
 
 const API_BASE = 'https://phi-lab-server.vercel.app/api/v1/lab';
