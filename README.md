@@ -1,3 +1,75 @@
+# 📘 JavaScript ES6+ Concepts — Assignment 005
+
+A beginner-friendly web project that visually demonstrates and explains
+core modern JavaScript (ES6+) concepts through interactive examples.
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** — Structure and markup
+- **CSS3** — Styling and layout
+- **JavaScript (ES6+)** — Core logic and interactivity
+
+---
+
+## ✨ Features
+
+- 📌 **var, let & const** — Explains scope differences with live examples
+- 📌 **Spread Operator (`...`)** — Demonstrates array/object spreading and merging
+- 📌 **Array Methods** — Interactive examples of `map()`, `filter()`, and `forEach()`
+- 📌 **Arrow Functions** — Shows concise ES6 arrow function syntax vs traditional functions
+- 📌 **Template Literals** — Covers string interpolation and multi-line strings
+
+---
+
+## 📦 Dependencies
+
+This project uses **no external libraries or frameworks** — just plain HTML,
+CSS, and JavaScript. No installation of packages required.
+
+---
+
+## 🚀 Running Locally
+
+1. **Clone the repository**
+```bash
+   git clone https://github.com/TOMAL5085/ASSIGNMENT-005.git
+```
+
+2. **Navigate into the project folder**
+```bash
+   cd ASSIGNMENT-005
+```
+
+3. **Open in your browser**
+   - Simply open `index.html` directly in any modern browser, **or**
+   - Use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+     extension in VS Code for auto-reload support.
+
+---
+
+## 🔗 Links
+
+| Resource | Link |
+|----------|------|
+| 🌐 Live Demo | [View Live](#) *(https://tomal5085.github.io/ASSIGNMENT-005/)* |
+| 💻 Repository | [github.com/TOMAL5085/ASSIGNMENT-005](https://github.com/TOMAL5085/ASSIGNMENT-005) |
+
+---
+
+## 📁 Project Structure
+
+```
+ASSIGNMENT-005/
+├── assets/          # Images and static resources
+├── index.html       # Main HTML file
+├── style.css        # Stylesheet
+└── script.js        # JavaScript logic
+```
+
+
+
 1. var, let, and const are all used to declare variables in JavaScript but they behave differently.
 var is the older way of declaring variables. It has function scope and can be both redeclared and reassigned.
 let was introduced in ES6. It has block scope and can be reassigned but it cannot be redeclared in the same scope.
